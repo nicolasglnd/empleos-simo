@@ -19,6 +19,27 @@ body {
     color: #333;
 }
 
+#select-empleos {
+    display: block;
+    width: 90%;
+    max-width: 500px; /* Limita el ancho en pantallas grandes */
+    margin: 2rem auto; /* Centrado y con aire respecto al h1 y las cards */
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #495057;
+    background-color: var(--color-card-fondo);
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#select-empleos:hover {
+    border-color: #ced4da;
+}
+
 /* Encabezados */
 h1 {
     text-align: center;
