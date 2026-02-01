@@ -584,7 +584,6 @@ function crearEmpleo(item) {
 	card.appendChild(funcionesLista);
 
     return card;
-
 }
 
 function renderizarEmpleos(listaEmpleos) {
@@ -600,4 +599,18 @@ function renderizarEmpleos(listaEmpleos) {
 	})
 }
 
+selectEmpleos.addEventListener('change', (e) => {
+	console.log(e.target.value);
+	switch (e.target.value) {
+		case "1":
+			renderizarEmpleos(data.arquitectura);
+			break;
+		case "2":
+			renderizarEmpleos(data.ingMecanica);
+			break;
+	}
+});
+
+//Siempre iniciara con arquitectura seleccionado y con este cargara por default la pagina
+renderizarEmpleos(data.arquitectura);
 
